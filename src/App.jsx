@@ -35,7 +35,7 @@ export default function App() {
   }, [showConfetti])
 
   const API_URL = import.meta.env.PROD 
-    ? 'https://your-render-backend-url.onrender.com' 
+    ? 'https://emoji-sentiment-predictor-backend.onrender.com' 
     : 'http://localhost:5000'
 
   const handleSubmit = async (e) => {
