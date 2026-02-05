@@ -1,16 +1,69 @@
-# React + Vite
+# 🎨 Mood Emoji AI — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Minimalist React interface that reveals the emotional vibe of any word.  
+Paired with a Flask backend on Render • Deployed on Vercel
 
-Currently, two official plugins are available:
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel&logoColor=white)](https://vercel.com)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite)](https://vitejs.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 **https://mood-emoji-frontend.vercel.app**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Quick Start
+
+### Install dependencies
+```bash
+npm install
+Run locally
+bash
+Copy code
+npm run dev
+📦 Build for Production
+bash
+Copy code
+npm run build
+🌐 Deployment
+Vercel (Recommended)
+Push the project to GitHub
+
+Import the repository on Vercel
+
+Done — auto-deploys on every push 🚀
+
+Deploy via CLI
+bash
+Copy code
+npm install -g vercel
+vercel
+🔧 Configuration
+Update the backend API URL in src/App.jsx:
+
+js
+Copy code
+const API_URL = import.meta.env.PROD
+  ? 'https://your-backend.onrender.com' // ← Your Render URL
+  : 'http://localhost:5000'
+🛠️ Tech Stack
+Framework: React 18
+
+Bundler: Vite
+
+Styling: CSS (Inter font + minimal utility classes)
+
+Hosting: Vercel
+
+🔗 Links
+Live Demo: https://mood-emoji-frontend.vercel.app
+
+Backend Repo: ../backend
+
+Backend API: https://mood-emoji-backend.onrender.com
+
+📝 License
+MIT
